@@ -3,6 +3,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 const navLinks = [{
   name: "Home",
   href: "/#home",
@@ -45,16 +46,12 @@ export const Navbar = () => {
       )}>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/#home" className="flex items-center gap-2 sm:gap-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-              <span className="text-primary-foreground font-display font-bold text-base sm:text-lg">M</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-lg sm:text-xl text-primary-foreground">MAF</span>
-              <span className="text-[10px] sm:text-xs tracking-wider text-primary-foreground/70 hidden xs:block">
-                FACILITIES MANAGEMENT
-              </span>
-            </div>
+          <Link to="/#home" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="MAF Facility Management" 
+              className="h-10 sm:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
