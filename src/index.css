@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@layer base {
+  * {
+    font-family: 'Lexend', system-ui, sans-serif !important;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 30 20% 98%;
+    --foreground: 0 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 10% 15%;
+
+    --primary: 350 45% 30%;
+    --primary-foreground: 30 20% 98%;
+
+    --secondary: 43 45% 58%;
+    --secondary-foreground: 0 10% 15%;
+
+    --muted: 30 15% 92%;
+    --muted-foreground: 0 10% 45%;
+
+    --accent: 43 45% 58%;
+    --accent-foreground: 0 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 350 45% 30%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --maroon: 350 45% 30%;
+    --maroon-dark: 350 50% 22%;
+    --maroon-light: 350 35% 45%;
+    --gold: 43 45% 58%;
+    --gold-light: 43 50% 75%;
+    --gold-dark: 43 50% 45%;
+    --cream: 30 20% 98%;
+    --cream-dark: 30 15% 92%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 45% 58%) 0%, hsl(43 50% 45%) 100%);
+    --gradient-maroon: linear-gradient(135deg, hsl(350 45% 30%) 0%, hsl(350 50% 22%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.7) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 30px hsla(0, 0%, 0%, 0.08);
+    --shadow-elevated: 0 10px 50px hsla(0, 0%, 0%, 0.12);
+    --shadow-gold: 0 4px 20px hsla(43, 45%, 58%, 0.3);
+  }
+
+  .dark {
+    --background: 0 10% 10%;
+    --foreground: 30 20% 98%;
+
+    --card: 0 10% 15%;
+    --card-foreground: 30 20% 98%;
+
+    --popover: 0 10% 15%;
+    --popover-foreground: 30 20% 98%;
+
+    --primary: 43 45% 58%;
+    --primary-foreground: 0 10% 10%;
+
+    --secondary: 350 45% 30%;
+    --secondary-foreground: 30 20% 98%;
+
+    --muted: 0 10% 20%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 43 45% 58%;
+    --accent-foreground: 0 10% 10%;
+
+    --border: 0 10% 20%;
+    --input: 0 10% 20%;
+    --ring: 43 45% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  /* Smooth parallax rendering */
+  .parallax-smooth {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+@layer components {
+  .parallax-section {
+    @apply relative bg-fixed bg-center bg-cover;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 ease-out hover:shadow-elevated hover:-translate-y-1;
+  }
+
+  .gold-underline {
+    @apply relative inline-block;
+  }
+
+  .gold-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent transform scale-x-0 origin-left transition-transform duration-300;
+  }
+
+  .gold-underline:hover::after {
+    @apply scale-x-100;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
