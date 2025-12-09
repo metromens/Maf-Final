@@ -68,7 +68,7 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/nazarmuhammed740@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/wahab@maffm.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
