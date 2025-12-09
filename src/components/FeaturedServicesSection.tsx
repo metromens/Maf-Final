@@ -218,6 +218,19 @@ export const FeaturedServicesSection = () => {
             <FeaturedServiceCard key={service.title} service={service} index={index} />
           ))}
         </div>
+
+        {/* Show More Services Button */}
+        <AnimatedElement delay={0.3}>
+          <div className="text-center mt-12">
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-gold hover:shadow-gold-hover transition-all duration-300 hover:scale-105 group"
+            >
+              Show More Services
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </AnimatedElement>
       </div>
     </section>
   );
