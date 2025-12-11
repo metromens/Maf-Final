@@ -59,7 +59,7 @@ export const HeroSection = () => {
             Excellence in{" "}
             <span className="text-accent">Facility Care</span>
             <br />
-            Across Dubai
+            Across UAE
           </motion.h1>
 
           {/* Subtext */}
