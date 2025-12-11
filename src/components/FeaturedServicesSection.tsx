@@ -30,7 +30,7 @@ const featuredServices: FeaturedService[] = [
     title: "HVAC Maintenance",
     slug: "hvac-maintenance",
     shortDesc: "Complete Climate Control Solutions",
-    description: "Our expert technicians provide comprehensive HVAC services including installation, preventive maintenance, repairs, and system optimization. We ensure optimal indoor air quality and energy efficiency for commercial and residential properties across Dubai.",
+    description: "Our expert technicians provide comprehensive HVAC services including installation, preventive maintenance, repairs, and system optimization. We ensure optimal indoor air quality and energy efficiency for commercial and residential properties across UAE.",
     features: ["24/7 Emergency Support", "Energy Audits", "Preventive Maintenance", "System Upgrades"],
     image: hvacImg,
   },
