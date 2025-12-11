@@ -103,7 +103,7 @@ export const HeroSection = () => {
             className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary-foreground/20"
           >
             <div>
-              <div className="font-display text-3xl sm:text-4xl font-bold text-accent">15+</div>
+              <div className="font-display text-3xl sm:text-4xl font-bold text-accent">30+</div>
               <div className="text-primary-foreground/70 text-sm mt-1">Years Experience</div>
             </div>
             <div>

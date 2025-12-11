@@ -89,7 +89,7 @@ export const ServicesSection = () => {
           </AnimatedElement>
           <AnimatedElement delay={0.1}>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
-              Comprehensive <span className="text-primary">FM Services</span>
+              Comprehensive <span className="text-primary">FM Services</span> and project management on demand request 24/7
             </h2>
           </AnimatedElement>
           <AnimatedElement delay={0.2}>
