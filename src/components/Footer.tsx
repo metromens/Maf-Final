@@ -97,6 +97,17 @@ export const Footer = () => {
           <p className="text-center text-primary-foreground/50 text-sm">
             © {currentYear} MAF Facilities Management. All rights reserved.
           </p>
+          <p className="text-center text-primary-foreground/50 text-sm mt-2">
+            Powered by{" "}
+            <a
+              href="https://techverseinfotechprivatelimited.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent/80 transition-colors"
+            >
+              Techverse Infotech
+            </a>
+          </p>
         </motion.div>
       </div>
     </footer>
