@@ -47,11 +47,11 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/#home" className="flex items-center">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center overflow-hidden p-1.5">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center overflow-hidden">
               <img 
                 src={logo} 
                 alt="MAF Facility Management" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
           </Link>
