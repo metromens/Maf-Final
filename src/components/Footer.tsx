@@ -36,7 +36,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Excellence in facility care across Dubai. Your trusted partner for 
+              Excellence in facility care across UAE. Your trusted partner for 
               comprehensive property management solutions.
             </p>
           </div>

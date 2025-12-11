@@ -30,7 +30,7 @@ const features: Feature[] = [
   {
     icon: Award,
     title: "Industry Excellence",
-    description: "Recognized for outstanding service quality and operational standards across Dubai.",
+    description: "Recognized for outstanding service quality and operational standards across UAE.",
   },
   {
     icon: Users,
@@ -101,7 +101,7 @@ export const AboutSection = () => {
             <AnimatedElement direction="left" delay={0.2}>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 MAF Facilities Management is a premier facility management company headquartered 
-                in the heart of Dubai's Business Bay. Led by Managing Director Abdul Wahab, we 
+                in the heart of UAE's Business Bay. Led by Managing Director Abdul Wahab, we 
                 bring years of expertise and a commitment to excellence that sets us apart in the industry.
               </p>
             </AnimatedElement>
